@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Project REACT PRIME Mtg
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Criar estrutura do projeto
+```shell
+npx create-react-app prime-react-app-mtg --template typescript
+cd prime-react-Mtg
+```
+## Instalar as dependências
+```shell
+npm install primereact primeicons axios styled-components
+npm i --save-dev @types/styled-components
+npm install --save react-router-dom@5.2.0
+npm i --save-dev @types/react-router-dom
 
-## Available Scripts
+```
+## Criar os componentes
 
-In the project directory, you can run:
+```shell
+npx generate-react-cli component MtgList
+npx generate-react-cli component MtgDetails
+npx generate-react-cli component MtgForm
+npx generate-react-cli component MtgEditForm
+npx generate-react-cli component Menu
+```
+
+
+
+# Meu Projeto com Create React App
+
+Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app).
+
+## Comandos Disponíveis
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Inicia o aplicativo no modo de desenvolvimento. Abra [http://localhost:3000](http://localhost:3000) para ver no navegador. A página será recarregada se você fizer edições.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes em modo de observação. Mais informações em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Constrói o aplicativo para produção na pasta `build`. Seu aplicativo estará pronto para ser implantado!
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Atenção: essa ação não tem volta!** Use quando quiser personalizar configurações e ferramentas de build.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Mais Informações
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para aprender mais, visite a [documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started) e a [documentação do React](https://reactjs.org/).
