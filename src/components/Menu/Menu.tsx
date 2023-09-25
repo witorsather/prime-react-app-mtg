@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 // 2 Dentro desse componente, ele define uma lista chamada items. Cada item dessa lista é um objeto que contem informacoes como o rotulo (label), ícone e o que fazer quando o usuario clica no item (command). No caso, ele muda a pagina.
 // 3 Finalmente, o componente Menubar do PrimeReact e usado, e ele recebe essa lista items como argumento para saber o que mostrar e o que fazer quando um item é clicado.
 // 4 O componente(classe) Menubar da biblioteca PrimeReact gera um HTML combinando os valores que passei em items com os recursos do proprio componente(classe). Isso cria um menu interativo na tela.
-// 5 Objetivo final 'gerar um HTML'
+// 5 Objetivo final 'gerar um HTML'.
 
 const Menu = () => {
    const history = useHistory(); // Usa React Router ou Roteador do React, ele serve para mudar de páginas ou de rotas da aplicação
