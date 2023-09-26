@@ -23,13 +23,18 @@ npx generate-react-cli component MtgEditForm
 npx generate-react-cli component Menu
 ```
 
+## Comando Iniciar Projeto
+
+### `npm start`
+
+Inicia o aplicativo no modo de desenvolvimento. Abra [http://localhost:3000](http://localhost:3000) para ver no navegador. A página será recarregada se você fizer edições.
 
 
 # Meu Projeto com Create React App
 
 Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Comandos Disponíveis
+## Comando Iniciar Projeto
 
 ### `npm start`
 
