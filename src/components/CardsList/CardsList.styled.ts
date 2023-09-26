@@ -1,4 +1,4 @@
 import styled from 'styled-components';
 
-export const MtgListWrapper = styled.div`
+export const CardsListWrapper = styled.div`
 `;

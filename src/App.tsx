@@ -12,6 +12,7 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Menu from "./components/Menu/Menu";
+import CardsList from "./components/CardsList/CardsList";
 
 
 function App() { // Funcao principal do componente "App"
@@ -23,14 +24,10 @@ function App() { // Funcao principal do componente "App"
         e renderiza apenas o primeiro componente que corresponde a rota atual, ele sai procurando um componente
         que bate com a rota atual  */}
         <Switch> 
-          
           {/* Route - parametro e a rota e retorno e o componente
           exact path="/" é a rota principal
-          component Menu é o componente que é recebido nessa rota */}
-          {/*<Route exact path="/" component={Menu} />
-           <Route path="/pokemon/:id" component={PokemonDetails} />
-          <Route path="/add" component={PokemonEditForm} />
-          <Route path="/edit/:id" component={PokemonEditForm} /> */}
+          component MtgList é o componente que é recebido nessa rota */}
+          <Route exact path="/" component={CardsList} />
         </Switch>
       </div>
     </Router>
