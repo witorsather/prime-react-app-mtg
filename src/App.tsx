@@ -13,6 +13,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Menu from "./components/Menu/Menu";
 import CardsList from "./components/CardsList/CardsList";
+import CardDetails from "./components/CardDetails/CardDetails";
 
 
 function App() { // Funcao principal do componente "App"
@@ -28,6 +29,7 @@ function App() { // Funcao principal do componente "App"
           exact path="/" é a rota principal
           component MtgList é o componente que é recebido nessa rota */}
           <Route exact path="/" component={CardsList} />
+          <Route exact path="/card/:id" component={CardDetails} />
         </Switch>
       </div>
     </Router>

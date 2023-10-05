@@ -28,9 +28,22 @@ const CardsList = () => {
     return (
       <div>
         <DataTable value={cards}>
-          <Column field="name" header="Name"></Column>
-          <Column field="imageUrl" header="manaCost"></Column>
-        </DataTable>
+        <Column field="name" header="Name"></Column>
+        <Column field="manaCost" header="manaCost"></Column>
+        <Column field="type" header="type"></Column>
+        <Column field="rarity" header="rarity"></Column>
+        <Column field="originalText" header="originalText"></Column>
+        <Column
+          field="id"
+          header="Detalhes da Carta"
+          body={(rowData) => (
+            <a href={`/card/${rowData.id}`} 
+            target="_self" rel="noreferrer">
+              Detalhes
+            </a>
+          )}
+        ></Column>
+      </DataTable>
       </div>
     )
 };
